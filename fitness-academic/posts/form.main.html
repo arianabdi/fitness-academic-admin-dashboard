@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ٔPost</title>
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
+    <link href="../layout/layout.css" rel="stylesheet">
+
+    <script src="../layout/head.js"></script>
+    <!-- vendor css -->
+    <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../lib/typicons.font/src/font/typicons.css" rel="stylesheet">
+    <link href="../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="../../lib/quill/quill.core.css" rel="stylesheet">
+    <link href="../../lib/quill/quill.snow.css" rel="stylesheet">
+    <link href="../../lib/quill/quill.bubble.css" rel="stylesheet">
+    
+
+    
+  </head>
+  <body class="pos-relative" data-bs-spy="scroll" data-bs-target="#navSection" data-offset="120">
+
+
+    <div class="text-center " id="spin-loader">
+      <div class="spinner-safe-area">
+        <div class="spinner-border"></div>
+      </div>
+    </div>
+
+
+    <div id="content-loader" style="display: none;">
+      <div id="header-placeholder"></div>
+      <div id="sidebar-placeholder"></div>
+
+      
+      <div class="section-nav">
+        <label class="nav-label">On This Page</label>
+        <nav id="navSection" class="nav flex-column">
+          <a href="#section1" class="nav-link">Basic Example</a>
+          <a href="#section2" class="nav-link">Disabled State</a>
+          <a href="#section3" class="nav-link">Justified</a>
+          <a href="#section4" class="nav-link">Vertical</a>
+          <a href="#section5" class="nav-link">Line Variation</a>
+        </nav>
+      </div><!-- df-section-nav -->
+
+      <div class="content content-components">
+        <div class="container">
+          <ol class="breadcrumb df-breadcrumbs mg-b-10">
+            <li class="breadcrumb-item"><a href="#">Components</a></li>
+            <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tab</li>
+          </ol>
+  
+          <h1 class="df-title yekan-bakh">ایجاد مقاله</h1>
+          <p class="mg-b-30 yekan-bakh">در این صفحه به ایجاد پست های مختلف جهت نمایش در اپلیکیشن پرداخته میشود. لطفا فیلد های مورد نظر را با دقت پر کنید تا از بروز ار گونه مشکل در اراسل مقاله جلوگیری شود</p>
+  
+  
+  
+          <div class="card  mg-b-20">
+            <div class="card-header yekan-bakh">عنوان مقاله</div>
+            <div class="card-body">
+              <input type="text" class="form-control yekan-bakh" placeholder="عنوان">
+            </div>
+          </div>
+  
+          <div class="card mg-b-20">
+            <div class="card-header yekan-bakh">دسته بندی</div>
+            <div class="card-body">
+        
+              <select class="form-select" id="select-limit">
+                <option value="2">2</option>
+                <option value="5"selected>5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+          </div>
+  
+  
+          <div class="card mg-b-20">
+            <div class="card-header yekan-bakh">متن مقاله</div>
+            <div class="card-body">
+        
+              <div class="tx-13 mg-b-25">
+                <div id="toolbar-container">
+                  <span class="ql-formats">
+                    <select class="ql-font"></select>
+                    <select class="ql-size"></select>
+                  </span>
+                  <span class="ql-formats">
+                    <button class="ql-bold"></button>
+                    <button class="ql-italic"></button>
+                    <button class="ql-underline"></button>
+                    <button class="ql-strike"></button>
+                  </span>
+                  <span class="ql-formats">
+                    <select class="ql-color"></select>
+                    <select class="ql-background"></select>
+                  </span>
+                  <span class="ql-formats">
+                    <button class="ql-script" value="sub"></button>
+                    <button class="ql-script" value="super"></button>
+                  </span>
+                  <span class="ql-formats">
+                    <button class="ql-header" value="1"></button>
+                    <button class="ql-header" value="2"></button>
+                    <button class="ql-blockquote"></button>
+                    <button class="ql-code-block"></button>
+                  </span>
+                  <span class="ql-formats">
+                    <button class="ql-list" value="ordered"></button>
+                    <button class="ql-list" value="bullet"></button>
+                    <button class="ql-indent" value="-1"></button>
+                    <button class="ql-indent" value="+1"></button>
+                  </span>
+                  <span class="ql-formats">
+                    <button class="ql-direction" value="rtl"></button>
+                    <select class="ql-align"></select>
+                  </span>
+                  <span class="ql-formats">
+                    <button class="ql-link"></button>
+                    <button class="ql-image"></button>
+                    <button class="ql-video"></button>
+                    <button class="ql-formula"></button>
+                  </span>
+                  <span class="ql-formats">
+                    <button class="ql-clean"></button>
+                  </span>
+                </div>
+                <div id="editor-container" class="ht-200">
+                  <strong>Quill</strong> is a free, <a href="#">open source</a> WYSIWYG editor built for the modern web. With its modular architecture and expressive API, it is completely customizable to fit any need.
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+  
+          <div class="card  mg-b-20">
+            <div class="card-header yekan-bakh">تصویر مقاله</div>
+            <div class="card-body">
+              <input class="form-control" type="file" id="formFile">
+            </div>
+          </div>
+  
+  
+          <button type="button" class="btn btn-primary w-100 yekan-bakh">ثبت مقاله</button>
+  
+  
+          <footer class="content-footer">
+            <div>
+              <span>&copy; 2023 DashForge v1.0.0. </span>
+              <span>Made by <a href="http://themepixels.me">ThemePixels</a></span>
+            </div>
+            <div>
+              <nav class="nav">
+                <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+                <a href="../../change-log.html" class="nav-link">Change Log</a>
+                <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
+              </nav>
+            </div>
+          </footer><!-- content-footer -->
+        </div><!-- container -->
+      </div><!-- content -->
+    </div><!-- content loader-->
+
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/feather-icons/feather.min.js"></script>
+    <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../lib/prismjs/prism.js"></script>
+    <script src="../../lib/quill/quill.min.js"></script>
+    <script src="../../assets/js/dashforge.js"></script>
+
+    
+
+
+    <script>
+      $(function(){
+        'use strict'
+
+        var quill = new Quill('#editor-container', {
+          modules: {
+            toolbar: '#toolbar-container'
+          },
+          placeholder: 'Compose an epic...',
+          theme: 'snow'
+        });
+
+        var quill2 = new Quill('#editor-container2', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic'],
+              ['link', 'blockquote', 'code-block', 'image'],
+              [{ list: 'ordered' }, { list: 'bullet' }]
+            ]
+          },
+          placeholder: 'Compose an epic...',
+          theme: 'snow'
+        });
+
+        // Inline Edit
+        var quillInline = new Quill('#quillInline', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic', 'underline'],
+              [{ 'header': 1 }, { 'header': 2 }, 'blockquote'],
+              ['link', 'image', 'code-block'],
+            ]
+          },
+          bounds: '#quillInline',
+          scrollingContainer: '#scrolling-container',
+          placeholder: 'Write something...',
+          theme: 'bubble'
+        });
+
+        const ps = new PerfectScrollbar('#scrolling-container', {
+          suppressScrollX: true
+        });
+
+        // Editor in Modal
+        var quillModal2 = new Quill('#quillEditorModal', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic', 'underline'],
+              [{ 'header': 1 }, { 'header': 2 }, 'blockquote'],
+              ['link', 'image', 'code-block'],
+            ]
+          },
+          theme: 'snow'
+        });
+
+      });
+    </script>
+
+    <script src="../../env.js"></script>
+    <script src="../layout/layout.js"></script>
+    <script src="../layout/loader.js"></script>
+
+  </body>
+</html>

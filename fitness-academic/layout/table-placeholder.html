@@ -1,0 +1,282 @@
+
+<style>
+    .ph-item{
+      min-height: 2em;
+    }
+    .ph-table{
+      line-height: 44px;
+    }
+    .ph-page-lik{
+      min-width: 32px;
+      height: 100%;
+      padding: 9px 10px;
+      display: flex;
+      background-color: unset !important;
+      border: unset !important
+    }
+    .ph-page-item{
+      margin: 0px 1px;
+    }
+    .ph-space{
+      width: 1%;
+      display: inline-block;
+    }
+    .ph-data-15{
+      width: 15%;
+      animation: placeholder-glow 2s ease-in-out infinite;
+    }
+    .ph-data-10{
+      width: 10%;
+      animation: placeholder-glow 2s ease-in-out infinite;
+    }
+    .ph-data-30{
+      width: 29%;
+      animation: placeholder-glow 2s ease-in-out infinite;
+    }
+    .ph-data-20{
+      width: 20%;
+      animation: placeholder-glow 2s ease-in-out infinite;
+    }
+    .ph-row{
+        width: 100%;
+        padding: 0px;
+        margin: 14px 0px;
+    }
+    .placeholder-col {
+        background-color: #8095b4; /* Light gray background */
+        padding: 14px; /* Add padding for spacing */
+        animation: colorChange .8s infinite alternate; /* Animation properties */
+    }
+    .placeholder-pagination-col {
+        background-color: #8095b4; /* Light gray background */
+        padding: 19px; /* Add padding for spacing */
+        animation: colorChange .8s infinite alternate; /* Animation properties */
+    }
+    
+    .placeholder-limit-col {
+        background-color: #8095b4; /* Light gray background */
+        animation: colorChange .8s infinite alternate; /* Animation properties */
+    }
+    .ph-padding{
+      padding: 0px 2px;
+    }
+    
+    .ph-padding-pagination {
+        padding: 0px 1px;
+    }
+    @keyframes colorChange {
+        0% {
+            background-color: #8095b4; /* Start with gray */
+        }
+        100% {
+            background-color: #e5eaf3; /* End with white */
+        }
+    }
+</style>
+
+
+<div data-label="Example table-loading" class="df-example demo-table">
+    <div class="container">
+      <div class="row ph-row gx-5">
+          <div class="col-sm-4 pd-0 ph-padding">
+              <div class="placeholder-col"></div>
+          </div>
+          <div class="col-sm-2 pd-0 ph-padding">
+            <div class="placeholder-col"></div>
+          </div>
+          <div class="col-sm-2 pd-0 ph-padding">
+            <div class="placeholder-col"></div>
+          </div>
+          <div class="col-sm-1 pd-0 ph-padding">
+            <div class="placeholder-col"></div>
+          </div>
+          <div class="col-sm-3 pd-0 ph-padding">
+            <div class="placeholder-col"></div>
+          </div>
+      </div>
+      <div class="row ph-row gx-5">
+        <div class="col-sm-4 pd-0 ph-padding">
+            <div class="placeholder-col"></div>
+        </div>
+        <div class="col-sm-2 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+        </div>
+        <div class="col-sm-2 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+        </div>
+        <div class="col-sm-1 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+        </div>
+        <div class="col-sm-3 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+        </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+    <div class="row ph-row gx-5">
+      <div class="col-sm-4 pd-0 ph-padding">
+          <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-2 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-1 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+      <div class="col-sm-3 pd-0 ph-padding">
+        <div class="placeholder-col"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row mg-t-10">
+    <div class="col">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination mg-b-0 placeholder-glow" id="pagination">
+          <li class="page-item" id="nextPage"><a class="page-link page-link-icon" href="#"><i data-feather="chevron-right"></i></a></li>
+         
+          
+          <div class="ph-page-item pd-0 ph-padding-pagination">
+            <div class="placeholder-pagination-col"></div>
+          </div>
+          <div class="ph-page-item pd-0 ph-padding-pagination">
+            <div class="placeholder-pagination-col"></div>
+          </div>
+          <div class="ph-page-item pd-0 ph-padding-pagination">
+            <div class="placeholder-pagination-col"></div>
+          </div>                
+          <li class="page-item disabled" id="prevPage"><a class="page-link page-link-icon" href="#"><i data-feather="chevron-left"></i></a></li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="col placeholder-limit-">
+      <select class="form-select" disabled id="select-limit">
+        <option value=""> </option>
+      </select>
+    </div>
+  </div><!-- table-responsive -->
+
+    
+
+  </div>

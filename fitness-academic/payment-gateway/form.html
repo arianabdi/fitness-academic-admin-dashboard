@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ٔPost</title>
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
+    <link href="../layout/layout.css" rel="stylesheet">
+
+    <script src="../layout/head.js"></script>
+  </head>
+  <body class="pos-relative" data-bs-spy="scroll" data-bs-target="#navSection" data-offset="120">
+
+    <div class="text-center " id="spin-loader">
+      <div class="spinner-safe-area">
+        <div class="spinner-border"></div>
+      </div>
+    </div>
+    
+    <div id="content-loader" style="display: none;">
+      <div id="header-placeholder"></div>
+      <div id="sidebar-placeholder"></div>
+  
+      <div class="section-nav">
+        <label class="nav-label">On This Page</label>
+        <nav id="navSection" class="nav flex-column">
+          <a href="#section1" class="nav-link">Basic Example</a>
+          <a href="#section2" class="nav-link">Disabled State</a>
+          <a href="#section3" class="nav-link">Justified</a>
+          <a href="#section4" class="nav-link">Vertical</a>
+          <a href="#section5" class="nav-link">Line Variation</a>
+        </nav>
+      </div><!-- df-section-nav -->
+  
+      <div class="content content-components">
+        <div class="container">
+          <ol class="breadcrumb df-breadcrumbs mg-b-10">
+            <li class="breadcrumb-item"><a href="#">Components</a></li>
+            <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tab</li>
+          </ol>
+
+          <div id="heading"></div>
+
+
+          <form id="form">
+            <div id="form-container"></div>
+          </form>
+  
+        
+          <div id="footer-placeholder"></div>
+  
+        </div><!-- container -->
+      </div><!-- content -->
+    </div>
+
+
+
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/feather-icons/feather.min.js"></script>
+    <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../lib/prismjs/prism.js"></script>
+
+    <script src="../../assets/js/dashforge.js"></script>
+    <script src="../../env.js"></script>
+  
+    <script src="../layout/layout.js"></script>
+    <script src="../layout/loader.js"></script>
+    <script src="./scripts/api.js"></script>
+    <script src="./scripts/formQuery.js"></script>
+    <script src="../scripts/form.js"></script>
+    <script src="../scripts/heading.js"></script>
+    <script>
+      $(function(){
+        'use strict'
+      });
+    </script>
+    <script src="../plugins/axios.js"></script>
+    <script src="./form.js"></script>
+  </body>
+</html>

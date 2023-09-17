@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+.expo/
+examples/
+npm-debug.log
+lib/
+assets/
+
+
+.idea
+.vscode
+Exponent-*.app
+*.log
+

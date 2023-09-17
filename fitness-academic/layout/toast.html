@@ -1,0 +1,33 @@
+<style>
+.toast-container{
+    z-index: 1000;
+}
+#toast-title{
+    
+}
+
+#toast-message{
+
+}
+
+.toast-body > ul > li{
+    line-height: 16px;
+  margin-bottom: 11px;
+}
+
+</style>
+
+<div class="pos-fixed toast-container t-30 r-30">
+    <div class="toast" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <h6 class="mg-b-0 mg-l-auto yekan-bakh" id="toast-title">Notification</h6>
+        <!-- <small>11 mins ago</small> -->
+        <button type="button" class="btn-close ml-2 mb-1 tx-normal tx-12" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="toast-body yekan-bakh" id="toast-message">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+</div>

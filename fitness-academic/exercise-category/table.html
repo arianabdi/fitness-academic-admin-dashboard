@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>دسته بندی تمرین</title>
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
+    <link href="../layout/layout.css" rel="stylesheet">
+    <link href="../styles/filterModal.css" rel="stylesheet">
+
+    <script src="../layout/head.js"></script>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navSection" data-offset="120">
+
+    <div class="text-center " id="spin-loader">
+      <div class="spinner-safe-area">
+        <div class="spinner-border"></div>
+      </div>
+    </div>
+
+
+
+
+    <div id="content-loader" style="display: none;">
+      <div id="header-placeholder"></div>
+      <div id="sidebar-placeholder"></div>
+
+      <div class="section-nav">
+        <label class="nav-label">On This Page</label>
+        <nav id="navSection" class="nav flex-column">
+          <a href="#section1" class="nav-link">Basic Example</a>
+          <a href="#section2" class="nav-link">Table Head Options</a>
+          <a href="#section3" class="nav-link">Striped Rows</a>
+          <a href="#section4" class="nav-link">Bordered Table</a>
+          <a href="#section5" class="nav-link">Hoverable Rows</a>
+          <a href="#section6" class="nav-link">Compact Table</a>
+          <a href="#section7" class="nav-link">Colored Variations</a>
+          <a href="#section8" class="nav-link">Responsive Table</a>
+        </nav>
+      </div><!-- df-section-nav -->
+  
+     <style>
+      .breadcrumbs-rtl{
+        letter-spacing: 0px !important;
+        font-family: yekan-bakh !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+      }
+
+      .breadcrumbs-rtl::before{
+        float: right !important;
+        padding-left: var(--bs-breadcrumb-item-padding-x) !important;
+        padding-right: unset !important;
+      }
+
+      .table-responsive .table th,
+      .table-responsive .table td{
+          font-family: yekan-bakh;
+      }
+     </style>
+      <div class="content content-components">
+        <div class="container">
+          <ol class="breadcrumb df-breadcrumbs mg-b-10">
+            <li class="breadcrumb-item breadcrumbs-rtl yekan-bakh"><a href="#">برنامه</a></li>
+            <li class="breadcrumb-item breadcrumbs-rtl yekan-bakh active" aria-current="page">برنامه ها</li>
+          </ol>
+  
+          <div id="heading">
+          </div>
+  
+  
+          <div class="row pd-15">
+            <div class="col-sm-7"></div>
+            <a href="#modal7" class="col-sm btn btn-outline-light btn-sm mg-l-10 yekan-bakh" data-bs-toggle="modal">
+              <i data-feather="filter"></i> فیلتر
+            </a> 
+            <button type="button" id="downloadCsvButton" class="col-sm-3 btn btn-sm mg-r-10 btn-outline-light yekan-bakh"> 
+              <i data-feather="download"></i> دانلود فایل CSV
+            </button>
+          </div>
+  
+  
+          <div id="table-main-placeholder" style="display: none;">
+            <div data-label="Example" class="df-example demo-table">
+              <div class="table-responsive">
+                <table class="table mg-b-0">
+                  <thead id="tableHeader"></thead>
+                  <tbody id="tableBody"></tbody>
+                </table>
+              </div><!-- table-responsive -->
+    
+              <div class="row mg-t-10">
+                <div class="col">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination mg-b-0" id="pagination">
+                      <!-- Page links will be added dynamically here -->
+                      <li class="page-item" id="nextPage"><a class="page-link page-link-icon" href="#"><i data-feather="chevron-right"></i></a></li>
+                      
+                      <li class="page-item disabled" id="prevPage"><a class="page-link page-link-icon" href="#"><i data-feather="chevron-left"></i></a></li>
+                    </ul>
+                  </nav>
+                </div>
+    
+                <div class="col">
+                  <select class="form-select" id="select-limit">
+                    <option value="2">2</option>
+                    <option value="5">5</option>
+                    <option value="10"selected>10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                  </select>
+                </div>
+    
+              </div>
+            </div><!-- df-example -->
+          </div>
+          <div id="table-loading-placeholder"></div>
+
+          <div id="footer-placeholder"></div>
+  
+        </div><!-- container -->
+      </div><!-- content -->
+
+    </div>
+
+    
+
+    <!-- Filter Modal -->
+    <div class="modal" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content tx-14">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel7">Modal Title</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="filterForm">
+              <div class="container" id="modal-container">
+
+              </div>      
+            </form>    
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary tx-13 w-100 yekan-bakh" id="filter-button">فیلتر</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Yes Or No Modal -->
+    <div class="modal" id="modal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content tx-14">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel8">حذف رکورد</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form id="filterForm">
+              <div class="container" id="modal-container">
+                  <h2>آیا از حذف این رکورد مطمئن هستید؟</h2>
+                  <h6>با حذف این رکورد اطلاعات قابل بازگشت نیستند. لطفا قبلا از حذف از حذف کردن آیتم اطمینان کامل حاصل کنید. </h6>
+              </div>      
+            </form>    
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light tx-13 yekan-bakh" data-bs-dismiss="modal" >منصرف شدم</button>
+            <button type="button" class="btn btn-danger tx-13 yekan-bakh" id="delete-item">حذف رکورد</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="toast-placeholder"></div>
+
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/feather-icons/feather.min.js"></script>
+    <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../lib/prismjs/prism.js"></script>
+
+    <script src="../../assets/js/dashforge.js"></script>
+    <script>
+      // Check if a token exists in local storage
+      const token = localStorage.getItem("token");
+      
+      // If there's no token, redirect to the login page
+      if (!token) {
+          window.location.href = "../auth/page-signin.html"; // Redirect to the login page
+      }
+    </script>
+    <script>
+      $(function(){
+        'use strict'
+
+      });
+    </script>
+    <script src="../scripts/translate.js"></script>
+    <script src="../layout/layout.js"></script>
+    <script src="../layout/loader.js"></script>
+    <script src="../scripts/toast.js"></script>
+    <script src="../plugins/axios.js"></script>
+    <script src="./scripts/filterQuery.js"></script>
+    <script src="./scripts/api.js"></script>
+    <script src="../plugins/jalali-date.js"></script>
+    <script src="../scripts/pagination.js"></script>
+    <script src="../scripts/filter.js"></script>
+    <script src="../../env.js"></script>
+    <script src="../scripts/exportCsv.js"></script>
+    <script src="./scripts/tableQuery.js"></script>
+    <script src="../scripts/heading.js"></script>
+    <script src="../scripts/table.js"></script>
+
+  </body>
+</html>

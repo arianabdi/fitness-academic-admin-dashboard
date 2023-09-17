@@ -1,0 +1,13 @@
+/* Custom CSS for styling */
+.custom-row {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.custom-row.checked {
+    background-color: #EBF3FF; /* Blue background for checked rows */
+    color: #1a1a1a; /* White text for checked rows */
+}
+.custom-row .form-check-label {
+    padding-left: 20px;
+}

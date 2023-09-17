@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>AddNewProgram</title>
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.demo.css">
+    <link href="../layout/layout.css" rel="stylesheet">
+    <link href="./styles/profile.css" rel="stylesheet">
+
+    <script src="../layout/head.js"></script>
+  </head>
+  <body class="yekan-bakh"  class="pos-relative" data-bs-spy="scroll" data-bs-target="#navSection" data-offset="120">
+
+    <div class="text-center " id="spin-loader">
+      <div class="spinner-safe-area">
+        <div class="spinner-border"></div>
+      </div>
+    </div>
+
+
+
+    <div id="content-loader" style="display: none;">
+      <div id="header-placeholder"></div>
+      <div id="sidebar-placeholder"></div>
+      
+      <div class="section-nav">
+        <label class="nav-label">On This Page</label>
+        <nav id="navSection" class="nav flex-column">
+          <a href="#section1" class="nav-link">Basic Example</a>
+          <a href="#section2" class="nav-link">Disabled State</a>
+          <a href="#section3" class="nav-link">Justified</a>
+          <a href="#section4" class="nav-link">Vertical</a>
+          <a href="#section5" class="nav-link">Line Variation</a>
+        </nav>
+      </div><!-- df-section-nav -->
+  
+      <div class="content content-components">
+        <div class="container">
+          <ol class="breadcrumb df-breadcrumbs mg-b-10">
+            <li class="breadcrumb-item"><a href="#">Components</a></li>
+            <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tab</li>
+          </ol>
+  
+          <h1 class="df-title yekan-bakh">پروفایل کاربری</h1>
+          <p class="mg-b-30 yekan-bakh">شما در این صفحه به تمامی اطلاعات کاربران خود از قبیل اطلاعات کاربری، اطلاعات هویتی ، پرداخت ها و برنامه اهیی که این کاربر از شما تهیه کرده است را مشاهده خواهید کرد. </p>
+  
+
+          <div class="profile" id="profile-placeholder">
+            
+            
+          </div>
+
+          <br/>
+
+          <div data-label="Example" class="df-example">
+            <ul class="nav nav-line" id="myTab5" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active yekan-bakh" id="transaction-tab" data-bs-toggle="tab" href="#transactions" role="tab" aria-controls="home" aria-selected="true">پرداخت ها</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link yekan-bakh" id="programs-tab" data-bs-toggle="tab" href="#programs" role="tab" aria-controls="profile" aria-selected="false">برنامه ها</a>
+              </li>
+            </ul>
+  
+            <div class="tab-content mg-t-20" id="myTabContent5">
+              
+              <div class="tab-pane fade show active" id="transactions" role="tabpanel" aria-labelledby="transaction-tab">
+                <table class="table mg-b-0">
+                  <thead id="tableHeader">
+                    <tr>
+                      <td>شناسه تراکنش</td>
+                      <td>مقدار</td>
+                      <td>هدف تراکنش</td>
+                      <td>تاریخ ایجاد</td>
+                    </tr>
+                  </thead>
+                  <tbody id="transactions-placeholder">
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="tab-pane fade" id="programs" role="tabpanel" aria-labelledby="programs-tab">
+                <table class="table mg-b-0">
+                  <thead id="tableHeader">
+                    <tr>
+                      <td>شناسه برنامه</td>
+                      <td>نوع برنامه</td>
+                      <td>تاریخ ایجاد</td>
+                    </tr>
+                  </thead>
+                  <tbody id="programs-placeholder">
+                  </tbody>
+                </table>
+              </div>
+
+
+            </div>
+          </div><!-- df-example -->
+
+
+          
+  
+          <footer class="content-footer">
+            <div>
+              <span>&copy; 2023 DashForge v1.0.0. </span>
+              <span>Made by <a href="http://themepixels.me">ThemePixels</a></span>
+            </div>
+            <div>
+              <nav class="nav">
+                <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+                <a href="../change-log.html" class="nav-link">Change Log</a>
+                <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
+              </nav>
+            </div>
+          </footer><!-- content-footer -->
+  
+        </div><!-- container -->
+      </div><!-- content -->
+    </div>
+
+
+
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/feather-icons/feather.min.js"></script>
+    <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../lib/prismjs/prism.js"></script>
+
+    <script src="../../assets/js/dashforge.js"></script>
+    <script>
+      $(function(){
+        'use strict'
+      });
+    </script>
+
+    
+    <script src="../../env.js"></script>
+    <script src="../layout/layout.js"></script>
+    <script src="../layout/loader.js"></script>
+    <script src="../plugins/jalali-date.js"></script>
+    <script src="../plugins/axios.js"></script>
+    <script src="./scripts/api.js"></script>
+    <script src="../scripts/profile.js"></script>
+
+
+  </body>
+</html>

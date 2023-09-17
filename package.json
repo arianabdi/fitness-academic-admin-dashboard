@@ -1,0 +1,15 @@
+{
+  "name": "dashforge",
+  "version": "2.0.0",
+  "description": "Premium Dashboard and Admin Template",
+  "main": "index.html",
+  "author": "ThemePixels",
+  "scripts": {
+    "start": "http-server"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "http-server": "14.1.1"
+  }
+}
