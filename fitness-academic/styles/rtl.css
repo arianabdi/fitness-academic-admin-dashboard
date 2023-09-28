@@ -18,7 +18,7 @@ body{
 }
 
 .yekan-bakh{
-    font-family: yekan-bakh;
+    font-family: yekan-bakh !important;
 }
 
 /* header */
@@ -32,7 +32,7 @@ body{
         margin-right: 6px;
         margin-left: unset
     }
-    
+
     .navbar-header .navbar-brand {
         padding: 0 20px 0 0;
       }
@@ -97,7 +97,7 @@ body{
 
 
   .section-nav {
-    left: 0;  
+    left: 0;
     right: unset !important;
   }
 
@@ -122,7 +122,7 @@ body{
     border-top-right-radius: unset !important;
     border-bottom-left-radius: var(--bs-pagination-border-radius);
     border-bottom-right-radius: unset !important;
-}  
+}
 
 .pagination{
     padding-right: 0;
