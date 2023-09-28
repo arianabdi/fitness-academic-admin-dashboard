@@ -20,19 +20,19 @@ if ! command -v nest &>/dev/null; then
   sudo npm install -g @nestjs/cli
 fi
 
-if ! command -v 7z &> /dev/null; then
-    echo "Installing 7z..."
+if ! command -v unrar &> /dev/null; then
+    echo "Installing unrar..."
 
     # Check for package manager and use the appropriate installation command
     if command -v apt-get &> /dev/null; then
         sudo apt-get update
-        sudo apt-get install p7zip-full
+        sudo apt-get install unrar
     elif command -v yum &> /dev/null; then
-        sudo yum install p7zip-full
+        sudo yum install unrar
     elif command -v brew &> /dev/null; then
-        brew install p7zip-full
+        brew install unrar
     else
-        echo "Could not install 7z. Please install it manually."
+        echo "Could not install unrar. Please install it manually."
         exit 1
     fi
 fi
@@ -71,8 +71,8 @@ if [ ! -f "$assets" ]; then
 fi
 
 # Extract the RAR file
-7z x "$lib"
-7z x "$assets"
+unrar x "$lib"
+unrar x "$assets"
 
 # Check the exit status of 7z
 if [ $? -eq 0 ]; then
