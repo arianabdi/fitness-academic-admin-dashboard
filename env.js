@@ -1,1 +1,1 @@
-const API_URL = 'http://80.211.194.23:30112/api';
+const API_URL = 'http://81.2.236.195:30112/api';

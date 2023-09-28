@@ -51,7 +51,7 @@ fi
 
 # Clone your GitHub repository (replace <your-github-repository-url> with your actual repository URL)
 echo "Cloning your project..."
-git clone "https://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@github.com/arianabdi/fitness-academic-admin-dashboard"
+git clone "https://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@github.com/arianabdi/fitness-academic-admin-dashboard"
 
 # Navigate to the project directory
 cd fitness-academic-admin-dashboard
