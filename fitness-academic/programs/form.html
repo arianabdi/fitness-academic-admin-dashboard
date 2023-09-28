@@ -23,18 +23,9 @@
     <div id="content-loader" style="display: none;">
       <div id="header-placeholder"></div>
       <div id="sidebar-placeholder"></div>
-      
-      <div class="section-nav">
-        <label class="nav-label">On This Page</label>
-        <nav id="navSection" class="nav flex-column">
-          <a href="#section1" class="nav-link">Basic Example</a>
-          <a href="#section2" class="nav-link">Disabled State</a>
-          <a href="#section3" class="nav-link">Justified</a>
-          <a href="#section4" class="nav-link">Vertical</a>
-          <a href="#section5" class="nav-link">Line Variation</a>
-        </nav>
-      </div><!-- df-section-nav -->
-  
+      <div id="tutorial-sidebar-placeholder"></div>
+
+
       <div class="content content-components">
         <div class="container">
           <ol class="breadcrumb df-breadcrumbs mg-b-10">
@@ -42,10 +33,10 @@
             <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tab</li>
           </ol>
-  
+
           <h1 class="df-title yekan-bakh">ایجاد برنامه جدید</h1>
           <p class="mg-b-30 yekan-bakh">در بخش باید متناسب با اطلاعات وارد شده توسط کاربر، برنامه تمرینی و غذایی ایجاد و ثبت شود</p>
-  
+
           <div data-label="Example" class="df-example">
             <ul class="nav nav-line" id="myTab5" role="tablist">
               <li class="nav-item">
@@ -55,29 +46,29 @@
                 <a class="nav-link yekan-bakh" id="diet-tab" data-bs-toggle="tab" href="#diet" role="tab" aria-controls="profile" aria-selected="false">برنامه غذایی</a>
               </li>
             </ul>
-  
+
             <div class="tab-content mg-t-20" id="myTabContent5">
-              
+
               <div class="tab-pane fade show active" id="exercises" role="tabpanel" aria-labelledby="exercises-tab">
-  
+
                 <form id="exerciseForm" >
                   <div id="exerciseContainer">
-                    
-                    
-                    
+
+
+
                   </div>
                 </form>
-            
+
 
 
                 <div class="col-sm order-3 d-flex justify-content-end">
                   <a class="col-sm btn btn-outline-light yekan-bakh btn-sm" id="addItemToExerciseContainer">
                     <i data-feather="plus"></i> افزودن تمرین جدید
-                  </a> 
+                  </a>
                 </div>
 
               </div>
-  
+
 
 
 
@@ -92,15 +83,15 @@
 
                 <form id="dietForm" >
                   <div id="dietContainer">
-                    
+
                   </div>
                 </form>
-                
-                
+
+
                 <div class="col-sm order-3 d-flex justify-content-end">
                   <a class="col-sm btn btn-outline-light yekan-bakh btn-sm" id="addItemToDietContainer">
                     <i data-feather="plus"></i> افزودن گزینه جدید
-                  </a> 
+                  </a>
                 </div>
 
               </div>
@@ -108,12 +99,12 @@
 
             </div>
           </div><!-- df-example -->
-          
+
           <div class="mg-b-20 mg-t-50" >
             <h6 class="head-title yekan-bakh">اطالاعات کاربر</h6>
             <p class="mg-b-0 head-content yekan-bakh">این اطلاعات توسط کاربر تکمیل و ارسال شده اند و کاربر قبول کرده است که این اطلاعات کاملاا صحیح میباشد.</p>
           </div>
-          
+
 
 
           <div  class="card card-body mg-t-20" id="specificationContainer">
@@ -123,8 +114,8 @@
 
           <button type="button" id="printDataBtn" class=" btn btn-primary w-100 yekan-bakh">ایجاد برنامه </button>
 
-          
-  
+
+
           <footer class="content-footer">
             <div>
               <span>&copy; 2023 DashForge v1.0.0. </span>
@@ -138,7 +129,7 @@
               </nav>
             </div>
           </footer><!-- content-footer -->
-  
+
         </div><!-- container -->
       </div><!-- content -->
     </div>
@@ -158,7 +149,7 @@
       });
     </script>
 
-    
+
     <script src="../../env.js"></script>
     <script src="../layout/layout.js"></script>
     <script src="../layout/loader.js"></script>
@@ -169,7 +160,7 @@
     <script src="./scripts/manageDietForm.js"></script>
     <script src="./scripts/manageSpecificationsList.js"></script>
     <script src="./scripts/formSubmission.js"></script>
-    
+
     <script src="./scripts/api.js"></script>
 
   </body>
