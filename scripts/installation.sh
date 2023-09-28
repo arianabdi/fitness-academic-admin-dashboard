@@ -26,11 +26,11 @@ if ! command -v 7z &> /dev/null; then
     # Check for package manager and use the appropriate installation command
     if command -v apt-get &> /dev/null; then
         sudo apt-get update
-        sudo apt-get install p7zip
+        sudo apt-get install p7zip-full
     elif command -v yum &> /dev/null; then
-        sudo yum install p7zip
+        sudo yum install p7zip-full
     elif command -v brew &> /dev/null; then
-        brew install p7zip
+        brew install p7zip-full
     else
         echo "Could not install 7z. Please install it manually."
         exit 1
